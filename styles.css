@@ -11,7 +11,6 @@
     z-index: 1;
     display: flex;
     width: 100%;
-    max-width: 1200px;
     height: 80px;
     background-color: #f0fdff;
     justify-content: space-between;
@@ -97,7 +96,6 @@ nav {
 
 .main-wrap {
     margin: 0 auto;
-    max-width: 1200px;
     height: 100%;
     background-color: #cff8ff;
 }
@@ -111,6 +109,7 @@ nav {
     font-size: 1em;
     max-font-size: 30px;
     overflow: hidden;
+    max-height: 600px;
 }
 
 .overlay {
@@ -120,7 +119,7 @@ nav {
 .offset-menu {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    max-height: 300px;
 }
 
 .greeting p, .greeting h1 {
@@ -132,7 +131,9 @@ nav {
     filter: brightness(70%);
     min-width: 500px;
     width: 100%;
+    object-fit: cover;
     overflow: hidden;
+
 }
 
 
