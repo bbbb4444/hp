@@ -12,7 +12,7 @@
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: #f0fdff;
+    background-color: #e9e1fa;
     justify-content: space-between;
     align-items: center;
     padding-right:10px;
@@ -51,7 +51,7 @@ nav {
     margin: 0 auto;
     padding: 0.5em 0.8em;
     width: 50%;
-    background-color: #7e60bcC9;
+    background-color: rgba(147, 112, 219, 0.7);
     color: white;
     border-radius: 100px;
 }
@@ -59,7 +59,7 @@ nav {
 .button-style-3 {
     margin-top: 25px;
     padding: 0.3em 3em;
-    background-color: #7e60bc;
+    background-color: mediumpurple;
     color: white;
     border-radius: 100px;
     text-transform: uppercase;
@@ -67,7 +67,7 @@ nav {
 
 
 .button-style-1:hover {
-    background-color: mediumpurple;
+    background-color: rgba(147, 112, 219, 0.8);
 }
 
 .v-line {
@@ -87,7 +87,7 @@ nav {
 .menu-line {
     height: 10px;
     width: 40px;
-    background-color: cornflowerblue;
+    background-color: #b3a2e2;
     margin: 6px;
     border-radius: 3px;
 
@@ -96,7 +96,6 @@ nav {
 
 .main-wrap {
     margin: 0 auto;
-    height: 100%;
     background-color: #cff8ff;
 }
 
@@ -229,15 +228,19 @@ h1 {
 #testimonials > p {
     width: 48%;
     min-height: 35px;
-    background-color: #cff8ff;
+    background-color: #C4BDEF;
     font-size: 0.9em;
     padding: 10px;
     border-radius: 10px;
 }
 
+
+
+
+
 body {
     background-color: white;
-    height: 1200px;
+    height: 100vh;
 }
 
 footer {
@@ -246,17 +249,18 @@ footer {
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 80px;
-    background-color: #7e60bc;
-    color: #f0fdff;
+    background-color: #e9e1fa;
+    color: #3d0e3a;
     gap: 5px;
 }
 
 .blue {
-    background-color: lavender;
+    background-color: #F3EFFB;
+    min-height: 100vh;
 }
 
 /*MEDIA QUERIES*/
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 688px) {
     nav {
         display: inline-flex;
     }
@@ -269,8 +273,55 @@ footer {
         font-size: 30px;
     }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 992px) {
     .greeting > section > h1 {
         font-size: 80px !important;
     }
+}
+@media only screen and (min-width: 1312px) {
+    .main-wrap, .header-box {
+        max-width: 1312px;
+        margin: 0 auto;
+    }
+}
+
+/* inquiry page */
+.inquiry-box {
+    padding: 100px 0px 30px 0px;
+    width: auto;
+}
+
+form > div {
+    display: flex;
+    width: auto;
+}
+form > div > label {
+    width: 200px;
+    display: flex;
+    justify-content: end;
+    float: left;
+    clear: left;
+    align-items: center;
+}
+
+
+input:not(.submit), textarea {
+    width: 300px;
+    display: inline-block;
+    float: left;
+    text-align: left;
+
+    margin: 15px;
+    padding: 15px;
+    border-radius: 20px;
+    border-width: thin;
+}
+
+.submit {
+    margin-left: 200px;
+    clear: left;
+    float: left;
+    padding: 25px;
+    border-width: thin;
+    border-radius: 25px;
 }
