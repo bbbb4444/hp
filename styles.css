@@ -210,8 +210,8 @@ nav {
 }
 
 .greeting > section > div {
-    margin-top: 10px;
-    font-size: 3vw;
+    margin-top: 2em;
+    font-size: 4vw;
 }
 .overlay {
     position: relative;
