@@ -131,6 +131,7 @@ nav {
 .greeting {
     height: 70vw;
     max-height: 700px;
+    min-height: 400px;
     font-size: 4vw;
 }
 
@@ -229,6 +230,7 @@ nav {
     top: 0;
     filter: brightness(70%);
     width:100%;
+    min-height: 400px;
     max-width: 1312px;
     object-fit: cover;
     overflow: hidden;
