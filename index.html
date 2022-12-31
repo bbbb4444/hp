@@ -12,20 +12,21 @@
 
 <body>
 <div class="main-wrap">
+
     <header>
-        <div class="header-box">
+        <div class="header bg-color-purple-2 flex-container-row align-center">
             <!--        TODO: replace with logo img-->
             <div class="logo-img"></div>
             <nav aria-label="primary">
                 <!--            TODO: fix links-->
-                <a class="button" href="https://google.com">HOME</a>
-                <a class="button" href="inquiry.html">SERVICES</a>
-                <a class="button" href="https://google.com">POLICY</a>
-                <a class="button" href="https://google.com">ABOUT</a>
+                <a class="button" data-type="nav" href="https://google.com">HOME</a>
+                <a class="button" data-type="nav" href="inquiry.html">SERVICES</a>
+                <a class="button" data-type="nav" href="https://google.com">POLICY</a>
+                <a class="button" data-type="nav" href="https://google.com">ABOUT</a>
                 <div class="v-line"></div>
-                <a class='button' href="https://google.com">INQUIRY</a>
+                <a class='button' data-type="nav" href="https://google.com">INQUIRY</a>
             </nav>
-            <div class="menu-icon">
+            <div class="header__menu-icon">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
@@ -35,19 +36,19 @@
 
     <main>
         <!--       TODO: replace with main image -->
-        <article class="greeting">
+        <article class="greeting flex-container">
             <img src="photos/cooper.jpg" alt='dog sniffing grass' class="main-image">
             <section class="overlay offset-menu">
-                <h1>Pet care you can rely on</h1>
+                <p class="large-text">Let us lend you a helping paw</p>
                 <p><i>Now caring for the Greenleigh neighborhoods</i></p>
-                <a class='butt button-style-1 t1-offset' href="https://google.com"><i>Click here to schedule a free meet and greet</i></a>
+                <div><a class='button' data-type="large" href="https://google.com"><i>Click here to schedule a free meet and greet</i></a></div>
             </section>
         </article>
 
-        <section class="information blue">
+        <section class="information bg-color-purple child-gaps">
 
             <article class="introduction">
-                <h1 class="heading-style-1">Helping Paw</h1>
+                <h1 class="">Helping Paw</h1>
                 <p>We’re owner-operated, licensed, local, and insured. Our experienced and conscientious pet care
                     providers offer boutique dog walking and pet sitting services in your home. We’re located in
                     Palm Coast, FL and serve all of Flagler County. Xanadu’s mission is to help the pets in our
@@ -58,9 +59,9 @@
                     from dogs and cats to exotic animals and even livestock. Click here to see all services and pricing.</p>
             </article>
 
-            <article>
-                <h1 class="heading-style-1">Our Services</h1>
-                <section id="services" class="flex-container-row">
+            <article class="services | margin-x-auto">
+                <h2 class="">Our Services</h2>
+                <section class="flex-container-row justify-space-evenly align-end margin-x-auto">
                     <div class="flex-container">
                         <img src="icons/dog.png" alt="dog walking icon"/>
                         <a>Dog Walking</a>
@@ -74,25 +75,25 @@
                         <a>House Sitting</a>
                     </div>
                 </section>
-                <div class="flex-container"><a class="butt button-style-3">Learn more</a></div>
+                <div class="flex-container"><a class="button" data-type="medium">Learn more</a></div>
             </article>
 
 
-            <article id="photo-gallery" class="flex-container" aria-label="photo gallery">
-                <h1 class="heading-style-1">Our (happy) clients!</h1>
+            <article class="photo-gallery | flex-container" aria-label="photo gallery">
+                <h2 class="">Our Clients!</h2>
                 <section class="pictures">
-                    <img src="photos/pic1.jpg" alt="dog">
-                    <img src="photos/pic2.jpg" alt="dog">
-                    <img src="photos/pic3.jpg" alt="cat">
-                    <img src="photos/pic5.jpg" alt="dog">
-                    <img src="photos/pic8.jpg" alt="dog">
-                    <img src="photos/pic9.jpg" alt="dog">
+                    <img src="photos/pic1.jpg" class="pictures__img br-1" alt="dog">
+                    <img src="photos/pic2.jpg" class="pictures__img br-1" alt="dog">
+                    <img src="photos/pic3.jpg" class="pictures__img br-1" alt="cat">
+                    <img src="photos/pic5.jpg" class="pictures__img br-1" alt="dog">
+                    <img src="photos/pic8.jpg" class="pictures__img br-1" alt="dog">
+                    <img src="photos/pic9.jpg" class="pictures__img br-1" alt="dog">
                 </section>
-                <a class="butt button-style-3">View more</a>
+                <div><a class="button" data-type="medium">View more</a></div>
             </article>
-            <article aria-labelledby="testimonials-head">
-                <h1 class='heading-style-1' id="testimonials-head">Testimonials</h1>
-                <div id="testimonials" class="flex-container">
+            <article class="testimonials" aria-labelledby="testimonials-head">
+                <h2 id="testimonials-head">Testimonials</h2>
+                <div class="testimonials__container flex-container margin-x-auto">
                     <p><i>Erin is the best!</i> - Dana</p>
                     <p><i>Helping Paw took great care of my doodle while I was on vacation!</i> - Porter</p>
                     <p><i>They helped a lot and took amazing pictures. There is no one else I would trust.</i> - Millie</p>
