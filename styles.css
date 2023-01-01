@@ -19,8 +19,17 @@ h2 {
 }
 
 body {
-    background-color: white;
+}
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-wrap-short {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    max-width: 1312px;
 }
 /* Composition */
 
@@ -80,7 +89,7 @@ body {
 .bg-color-purple-2 {
     background-color: #e9e1fa;
 }
-.bg-color-purple {
+.bg-color-purple-1 {
     background-color: #F3EFFB;
 }
 .bg-color-blue {
@@ -299,11 +308,11 @@ gap: 6px;
 
 
 footer {
-    position: relative;
-    margin-top: -15px;
+    margin-top: auto;
     border-radius: 15px 15px 0 0;
     width: 100%;
     height: 80px;
+    min-height: 80px;
     background-color: #e9e1fa;
     color: #3d0e3a;
     gap: 5px;
