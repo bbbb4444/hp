@@ -5,7 +5,8 @@
     <title>Helping Paw LLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
-
+    <link rel="stylesheet" href="lightbox.min.css"/>
+    <script src="lightbox-plus-jquery.min.js"></script>
 </head>
 
 
@@ -38,10 +39,10 @@
         <!--       TODO: replace with main image -->
         <article class="greeting flex-container">
                 <img src="photos/cooper.jpg" alt='dog sniffing grass' class="main-image">
-                <section class="overlay flex-container">
+                <section class="text-container | flex-container">
                     <p class="large-text">Let us lend you a helping paw</p>
-                    <p><i>Now caring for the Greenleigh neighborhoods</i></p>
-                    <div class="flex-container"><a class='button' data-type="large" href="https://google.com"><i>Click here to schedule a free meet and greet</i></a></div>
+                    <p><i>Caring for the Greenleigh neighborhood</i></p>
+                    <div class="text-container__button-container | flex-container"><a class='button' data-type="large" href="https://google.com"><i>Click here to schedule a free meet and greet</i></a></div>
                 </section>
         </article>
 
@@ -59,38 +60,58 @@
                     from dogs and cats to exotic animals and even livestock. Click here to see all services and pricing.</p>
             </article>
 
+            <div class="h-line"></div>
+
             <article class="services | margin-x-auto">
                 <h2 class="">Our Services</h2>
                 <section class="flex-container-row justify-space-evenly align-end margin-x-auto">
-                    <div class="flex-container">
+                    <div class="service | flex-container">
                         <img src="icons/dog.png" alt="dog walking icon"/>
-                        <a>Dog Walking</a>
+                        <p>Dog Walking</p>
                     </div>
-                    <div class="flex-container">
+                    <div class="service | flex-container">
                         <img src="icons/dropin.png" alt="drop in icon"/>
-                        <a>Drop-ins</a>
+                        <p>Drop-ins</p>
                     </div>
-                    <div class="flex-container">
+                    <div class="service | flex-container">
                         <img src="icons/housesit.png" alt="house sit icon"/>
-                        <a>House Sitting</a>
+                        <p>House Sitting<a class="color-red">*</a></p>
                     </div>
                 </section>
+                <p class="services__service-notice"><a class="color-red">*</a>We are currently not accepting new clients for house sitting.</p>
                 <div class="flex-container"><a class="button" data-type="medium">Learn more</a></div>
             </article>
 
 
+            <div class="h-line"></div>
+
             <article class="photo-gallery | flex-container" aria-label="photo gallery">
                 <h2 class="">Our Clients!</h2>
                 <section class="pictures">
-                    <img src="photos/pic1.jpg" class="pictures__img br-1" alt="dog">
-                    <img src="photos/pic2.jpg" class="pictures__img br-1" alt="dog">
-                    <img src="photos/pic3.jpg" class="pictures__img br-1" alt="cat">
-                    <img src="photos/pic5.jpg" class="pictures__img br-1" alt="dog">
-                    <img src="photos/pic8.jpg" class="pictures__img br-1" alt="dog">
-                    <img src="photos/pic9.jpg" class="pictures__img br-1" alt="dog">
+                    <a href="photos/pic1.jpg" data-lightbox="mygallery">
+                        <img src="thumbnails/pic1.jpg" class="pictures__img br-1" alt="dog">
+                    </a>
+                    <a target="_blank" href="photos/pic2.jpg">
+                        <img src="thumbnails/pic2.jpg" class="pictures__img br-1" alt="dog">
+                    </a>
+                    <a target="_blank" href="photos/pic3.jpg">
+                        <img src="thumbnails/pic3.jpg" class="pictures__img br-1" alt="cat">
+                    </a>
+                    <a target="_blank" href="photos/pic5.jpg">
+                        <img src="thumbnails/pic5.jpg" class="pictures__img br-1" alt="dog">
+                    </a>
+                    <a target="_blank" href="photos/pic8.jpg">
+                        <img src="thumbnails/pic8.jpg" class="pictures__img br-1" alt="dog">
+                    </a>
+                    <a target="_blank" href="photos/pic9.jpg">
+                        <img src="thumbnails/pic9.jpg" class="pictures__img br-1" alt="dog">
+                    </a>
                 </section>
-                <div><a class="button" data-type="medium">View more</a></div>
+                <div class="flex-container"><a class="button" data-type="medium">View more</a></div>
             </article>
+
+            <div class="h-line"></div>
+
             <article class="testimonials" aria-labelledby="testimonials-head">
                 <h2 id="testimonials-head">Testimonials</h2>
                 <div class="testimonials__container flex-container margin-x-auto">
