@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helping Paw LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+
+
+<body>
+<div class="main-wrap">
+    <header>
+        <div class="header bg-color-purple-2 flex-container-row align-center">
+            <!--        TODO: replace with logo img-->
+            <div class="logo-img"></div>
+            <nav aria-label="primary">
+                <!--            TODO: fix links-->
+                <a class="button" data-type="nav" href="index.html">HOME</a>
+                <a class="button" data-type="nav" href="services.html">SERVICES</a>
+                <a class="button" data-type="nav" href="https://google.com">POLICY</a>
+                <a class="button" data-type="nav" href="https://google.com">ABOUT</a>
+                <div class="v-line"></div>
+                <a class='button' data-type="nav" href="inquiry.html">INQUIRY</a>
+            </nav>
+            <div class="header__menu-icon">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-color-purple-1">
+        <iframe width='100%'
+                height='400px'
+                src="https://api.mapbox.com/styles/v1/brobert910/clcaxc2c9001314pglllnellk.html?title=false&access_token=pk.eyJ1IjoiYnJvYmVydDkxMCIsImEiOiJjbGNheXEzc2Q0ODdnM3htczFkbjV5amtwIn0.rLVCGLDCXdsOxvRiU8NnUA&zoomwheel=false#11.45/39.3502/-76.4338"
+                title="Streets"
+                style="border:none;margin-top: 70px;">
+        </iframe>
+
+        <form class="inquiry-container">
+                <div class="inquiry-form__entry">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name">
+                </div>
+            <div class="inquiry-form__entry">
+                    <label for="phone">Phone Number: </label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+            <div class="inquiry-form__entry">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email" name="email">
+                </div>
+            <div class="inquiry-form__entry">
+                    <label for="comments">Comments: </label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+            <div class="inquiry-form__entry">
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+            </form>
+
+    </main>
+    <footer class="footer-container | flex-container bg-color-purple-1">
+        <div class="footer-container__footer | flex-container bg-color-purple-2">
+            <p>Copyright Helping Paw</p>
+            <a href="https://google.com"><p>Privacy Policy</p></a>
+        </div>
+    </footer>
+
+</div>
+</body>
+
+</html>

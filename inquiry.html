@@ -35,23 +35,34 @@
         <div class="inquiry-container | flex-container">
             <form class="inquiry-form">
                 <div class="inquiry-form__entry">
-                    <label>Name: </label>
-                    <input type="text" id="name" name="name">
+                    <label class="entry__label" for="name">Name: </label>
+                    <input class="entry__input" type="text" id="name" name="name">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label>Phone: </label>
-                    <input type="text" id="phone" name="phone">
+                    <label class="entry__label" for="address">Address: </label>
+                    <input class="entry__input" type="text" id="address" name="address">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label>Email: </label>
-                    <input type="text" id="email" name="email">
+                    <label class="entry__label" for="phone">Phone: </label>
+                    <input class="entry__input" type="tel" id="phone" name="phone">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label>Comments: </label>
-                    <textarea></textarea>
+                    <label class="entry__label" for="email">Email: </label>
+                    <input class="entry__input" type="email" id="email" name="email">
+                </div>
+                <div class="inquiry-form__entry">
+                    <label class="entry__label">Services: </label>
+                    <div class="test">
+                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="dog-walk" name="dog-walk"> Dog Walks</label>
+                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="drop-in" name="drop-in"> Drop-ins</label>
+                    </div>
+                </div>
+                <div class="inquiry-form__entry">
+                    <label class="entry__label" for="comments">Comments: </label>
+                    <textarea class="entry__input" id="comments" name="comments"></textarea>
                 </div>
                 <div>
-                    <input class="submit" type="submit" value="Submit">
+                    <input class="inquiry-form__submit" type="submit" value="Submit">
                 </div>
             </form>
             <img src="icons/girl2.png" class="inquiry-img"/>

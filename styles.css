@@ -2,7 +2,7 @@
 
 
 * {
-    font-family: serif;
+    font-family: "Varela Round", serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    max-width: 992px;
 }
 
 /***************************** Composition ****************************/
@@ -38,7 +39,27 @@ body {
 
 
 /***************************** Utility *****************************/
-
+.hover-underline-animation {
+    position: relative;
+}
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 4px;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: -8px;
+    left: 0;
+    background-image: linear-gradient(90deg, cornflowerblue, mediumpurple);
+    background-color: rgb(205, 166, 255);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-out;
+}
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 .margin-x-auto {
     margin-left: auto;
     margin-right: auto;
@@ -71,9 +92,10 @@ body {
 .text-shadow { text-shadow: 0.1em 0.1em 0.1em black; }
 .bg-color-purple-2 { background-color: #e9e1fa; }
 .bg-color-purple-1 { background-color: #F3EFFB; }
-.bg-color-blue { background-color: #cff8ff; }
+.bg-color-blue { background-color: #4d465d; }
 .br-1 { border-radius: 1.1em; }
 .large-text { font-size: 1.3em; }
+.font-size-medium { font-size: 20px; }
 .pos-absolute { position: absolute; }
 .pos-relative { position: relative; }
 
@@ -83,6 +105,7 @@ body {
     position: fixed;
     z-index: 1;
     width: 100%;
+    max-width: 992px;
     height: 80px;
     justify-content: space-between;
     padding-right: 10px;
@@ -138,7 +161,7 @@ nav {
     filter: brightness(70%);
     width:100%;
     min-height: 400px;
-    max-width: 1312px;
+    max-width: 992px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -161,7 +184,7 @@ nav {
 }
 
 .button {
-    font-family: sans-serif;
+    font-family: "Varela Round", sans-serif;
     cursor: pointer;
     min-width: fit-content;
     text-decoration: none;
@@ -226,19 +249,26 @@ nav {
 }
 
 .button[data-type="nav"] {
-    font-family: serif;
+    font-weight: bold;
     color: #3d0e3a;
     padding: 20px 6px;
+}
+.button[data-type="nav"]:hover {
+    transition: 0.5s;
+    color: purple;
 }
 
 .button[data-type="medium"] {
     padding: 0.3em 3em;
-    background-color: mediumpurple;
+    color: #3d0e3a;
+    font-size: 24px;
+    font-weight: bold;
+    /*background-color: mediumpurple;*/
     text-transform: uppercase;
 }
 .button[data-type="medium"]:hover,
 .button[data-type="medium"]:focus {
-    background-color: rgba(147, 112, 219, 0.7);
+    /*background-color: rgba(147, 112, 219, 0.7);*/
 }
 
 
@@ -250,11 +280,20 @@ nav {
     width: auto;
     justify-content: center;
 }
+.inquiry-form {
+    border-style: double;
+    border-width: 10px;
+    border-radius: 25px;
+    border-color: #ecdfff;
+    padding: 20px;
+
+    background-color: #ffffff;
+}
 .inquiry-form__entry {
     display: flex;
     width: auto;
 }
-.inquiry-form__entry > label {
+.entry__label {
     white-space: nowrap;
     width: 80px;
     display: flex;
@@ -263,28 +302,42 @@ nav {
     clear: left;
     align-items: center;
 }
+.entry__checkbox-label {
+
+}
+.test {
+    display: flex;
+    width: 300px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .inquiry-img {
     max-width: 400px;
 }
-input:not(.submit), textarea {
+
+.entry__input, textarea, .inquiry-form__submit {
+
+    border-width: 3px;
+    border-radius: 25px;
+    border-color: #d2d2d2;
+    border-style: none;
+}
+
+.entry__input, textarea {
     width: 300px;
     display: inline-block;
     float: left;
     text-align: left;
-
     margin: 15px;
     padding: 15px;
-    border-radius: 20px;
-    border-width: thin;
+    background-color: #ece9ff;
 }
-
-.submit {
+.inquiry-form__entry__input:invalid {
+    border-color: #e54b4b;
+}
+.inquiry-form__submit {
     margin-left: 200px;
-    clear: left;
-    float: left;
     padding: 25px;
-    border-width: thin;
-    border-radius: 25px;
 }
 
 iframe {
@@ -331,7 +384,6 @@ iframe {
 }
 @media only screen and (min-width: 1312px) {
     .main-wrap, .header {
-        max-width: 1312px;
         margin: 0 auto;
     }
 }
