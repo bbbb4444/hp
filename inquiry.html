@@ -14,19 +14,19 @@
 <body>
 <div class="main-wrap">
     <header>
-        <div class="header">
+        <div class="header bg-color-purple-2 flex-container-row align-center">
             <!--        TODO: replace with logo img-->
             <div class="logo-img"></div>
             <nav aria-label="primary">
                 <!--            TODO: fix links-->
-                <a class="button" href="https://google.com">HOME</a>
-                <a class="button" href="https://google.com">SERVICES</a>
-                <a class="button" href="https://google.com">POLICY</a>
-                <a class="button" href="https://google.com">ABOUT</a>
+                <a class="button" data-type="nav" href="https://google.com">HOME</a>
+                <a class="button" data-type="nav" href="inquiry.html">SERVICES</a>
+                <a class="button" data-type="nav" href="https://google.com">POLICY</a>
+                <a class="button" data-type="nav" href="https://google.com">ABOUT</a>
                 <div class="v-line"></div>
-                <a class='button' href="https://google.com">INQUIRY</a>
+                <a class='button' data-type="nav" href="https://google.com">INQUIRY</a>
             </nav>
-            <div class="menu-icon">
+            <div class="header__menu-icon">
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
                 <div class="menu-line"></div>
@@ -35,9 +35,13 @@
     </header>
 
     <main class="bg-color-1">
-        <iframe width='100%' height='400px' src="https://api.mapbox.com/styles/v1/brobert910/clcaxc2c9001314pglllnellk.html?title=false&access_token=pk.eyJ1IjoiYnJvYmVydDkxMCIsImEiOiJjbGNheDgyZnoxem1zM3Ntb3Vva2xqb29wIn0.-w6qEDf0XwGZNMZuevxwYg&zoomwheel=false#11.45/39.3502/-76.4338" title="Streets" style="border:none;"></iframe>
-        <article class="inquiry-box">
-            <form>
+        <iframe width='100%'
+                height='400px'
+                src="https://api.mapbox.com/styles/v1/brobert910/clcaxc2c9001314pglllnellk.html?title=false&access_token=pk.eyJ1IjoiYnJvYmVydDkxMCIsImEiOiJjbGNheXEzc2Q0ODdnM3htczFkbjV5amtwIn0.rLVCGLDCXdsOxvRiU8NnUA&zoomwheel=false#11.45/39.3502/-76.4338"
+                title="Streets"
+                style="border:none;">
+        </iframe>
+        <form>
                 <div>
                     <label>Name: </label>
                     <input type="text" id="name" name="name">
