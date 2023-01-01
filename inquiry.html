@@ -10,7 +10,7 @@
 
 
 <body>
-<div class="main-wrap-short margin-x-auto bg-color-purple-1">
+<div class="main-wrap margin-x-auto bg-color-purple-1">
     <header>
         <div class="header bg-color-purple-2 flex-container-row align-center">
             <!--        TODO: replace with logo img-->
@@ -32,33 +32,36 @@
         </div>
     </header>
     <main class="bg-color-purple-1">
-        <form>
-            <div>
-                <label>Name: </label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div>
-                <label>Phone Number: </label>
-                <input type="text" id="phone" name="phone">
-            </div>
-            <div>
-                <label>Email: </label>
-                <input type="text" id="email" name="email">
-            </div>
-            <div>
-                <label>Comments: </label>
-                <textarea></textarea>
-            </div>
-            <div>
-                <input class="submit" type="submit" value="Submit">
-            </div>
-        </form>
-
-        </article>
+        <div class="inquiry-container | flex-container">
+            <form class="inquiry-form">
+                <div class="inquiry-form__entry">
+                    <label>Name: </label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="inquiry-form__entry">
+                    <label>Phone: </label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="inquiry-form__entry">
+                    <label>Email: </label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="inquiry-form__entry">
+                    <label>Comments: </label>
+                    <textarea></textarea>
+                </div>
+                <div>
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+            </form>
+            <img src="icons/girl2.png" class="inquiry-img"/>
+        </div>
     </main>
-    <footer class="flex-container">
-        <p>Copyright Helping Paw</p>
-        <a href="https://google.com"><p>Privacy Policy</p></a>
+    <footer class="footer-container | flex-container bg-color-purple-1">
+        <div class="footer-container__footer | flex-container bg-color-purple-2">
+            <p>Copyright Helping Paw</p>
+            <a href="https://google.com"><p>Privacy Policy</p></a>
+        </div>
     </footer>
 </div>
 </body>

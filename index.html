@@ -38,11 +38,11 @@
     <main>
         <!--       TODO: replace with main image -->
         <article class="greeting flex-container">
-                <img src="photos/cooper.jpg" alt='dog sniffing grass' class="main-image">
-                <section class="text-container | flex-container">
-                    <p class="large-text">Let us lend you a helping paw</p>
-                    <p><i>Caring for the Greenleigh neighborhood</i></p>
-                    <div class="text-container__button-container | flex-container"><a class='button' data-type="large" href="https://google.com"><i>Click here to schedule a free meet and greet</i></a></div>
+                <img src="photos/cooper.jpg" alt='dog sniffing grass' class="main-image | pos-absolute">
+                <section class="pos-relative flex-container">
+                    <p class="large-text color-white text-shadow">Let us lend you a helping paw</p>
+                    <p class="color-white text-shadow"><i>Caring for the Greenleigh neighborhood</i></p>
+                    <div class="greeting__button-container | flex-container"><a class='button' data-type="large" href="https://google.com"><i>Click here to schedule a free meet and greet</i></a></div>
                 </section>
         </article>
 
@@ -65,20 +65,22 @@
             <article class="services | margin-x-auto">
                 <h2 class="">Our Services</h2>
                 <section class="flex-container-row justify-space-evenly align-end margin-x-auto">
-                    <div class="service | flex-container">
+                    <div class="services__service | flex-container">
                         <img src="icons/dog.png" alt="dog walking icon"/>
                         <p>Dog Walking</p>
                     </div>
-                    <div class="service | flex-container">
+                    <div class="services__service | flex-container">
                         <img src="icons/dropin.png" alt="drop in icon"/>
                         <p>Drop-ins</p>
                     </div>
-                    <div class="service | flex-container">
+                    <div class="services__service | flex-container">
                         <img src="icons/housesit.png" alt="house sit icon"/>
                         <p>House Sitting<a class="color-red">*</a></p>
                     </div>
                 </section>
-                <p class="services__service-notice"><a class="color-red">*</a>We are currently not accepting new clients for house sitting.</p>
+                <p class="services__service-notice">
+                    <a class="color-red">*</a>We are currently not accepting new clients for house sitting.
+                </p>
                 <div class="flex-container"><a class="button" data-type="medium">Learn more</a></div>
             </article>
 
@@ -87,7 +89,7 @@
 
             <article class="photo-gallery | flex-container" aria-label="photo gallery">
                 <h2 class="">Our Clients!</h2>
-                <section class="pictures">
+                <section class="pictures | flex-container-row flex-wrap justify-center">
                     <a href="photos/pic1.jpg" data-lightbox="gallery">
                         <img src="thumbnails/pic1.jpg" class="pictures__img br-1" alt="dog">
                     </a>
@@ -114,7 +116,7 @@
 
             <article class="testimonials" aria-labelledby="testimonials-head">
                 <h2 id="testimonials-head">Testimonials</h2>
-                <div class="testimonials__container flex-container margin-x-auto">
+                <div class="testimonials__container | flex-container-row flex-wrap align-center margin-x-auto">
                     <p><i>Erin is the best!</i> - Dana</p>
                     <p><i>Helping Paw took great care of my doodle while I was on vacation!</i> - Porter</p>
                     <p><i>They helped a lot and took amazing pictures. There is no one else I would trust.</i> - Millie</p>
@@ -126,9 +128,11 @@
 
     </main>
 
-    <footer class="flex-container">
-        <p>Copyright Helping Paw</p>
-        <a href="https://google.com"><p>Privacy Policy</p></a>
+    <footer class="footer-container | flex-container bg-color-purple-1">
+        <div class="footer-container__footer | flex-container bg-color-purple-2">
+            <p>Copyright Helping Paw</p>
+            <a href="https://google.com"><p>Privacy Policy</p></a>
+        </div>
     </footer>
 
 </div>
