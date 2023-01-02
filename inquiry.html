@@ -5,6 +5,7 @@
     <title>Helping Paw LLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
+    <script src="javascript.js"></script>
 </head>
 
 
@@ -17,12 +18,12 @@
             <div class="logo-img"></div>
             <nav aria-label="primary">
                 <!--            TODO: fix links-->
-                <a class="button" data-type="nav" href="index.html">HOME</a>
-                <a class="button" data-type="nav" href="services.html">SERVICES</a>
-                <a class="button" data-type="nav" href="https://google.com">POLICY</a>
-                <a class="button" data-type="nav" href="https://google.com">ABOUT</a>
+                <a class="button hover-underline-animation" data-type="nav" href="index.html">HOME</a>
+                <a class="button hover-underline-animation" data-type="nav" href="services.html">SERVICES</a>
+                <a class="button hover-underline-animation" data-type="nav" href="https://google.com">POLICY</a>
+                <a class="button hover-underline-animation" data-type="nav" href="https://google.com">ABOUT</a>
                 <div class="v-line"></div>
-                <a class='button' data-type="nav" href="inquiry.html">INQUIRY</a>
+                <a class='button hover-underline-animation' data-type="nav" href="inquiry.html">INQUIRY</a>
             </nav>
             <div class="header__menu-icon">
                 <div class="menu-line"></div>
@@ -33,7 +34,18 @@
     </header>
     <main class="bg-color-purple-1">
         <div class="inquiry-container | flex-container">
-            <form class="inquiry-form">
+            <div class="inquiry-container__text-container | bg-color-1 text-center">
+                <p>You can contact us by filling out the form, and we'll get back to you as soon as possible.<br>
+                Check out where we provide our <services></services> <a href="services.html" class="here-link"><b>here</b></a></p>
+            </div>
+            <form id="inquiry-form" class="inquiry-form">
+                <div class="inquiry-form__entry">
+                    <label class="entry__label">Services: </label>
+                    <div class="checkbox-container | flex-container-row justify-space-evenly">
+                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="dog-walk" name="dog-walk"> Dog Walks</label>
+                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="drop-in" name="drop-in"> Drop-ins</label>
+                    </div>
+                </div>
                 <div class="inquiry-form__entry">
                     <label class="entry__label" for="name">Name: </label>
                     <input class="entry__input" type="text" id="name" name="name">
@@ -51,21 +63,15 @@
                     <input class="entry__input" type="email" id="email" name="email">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label class="entry__label">Services: </label>
-                    <div class="test">
-                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="dog-walk" name="dog-walk"> Dog Walks</label>
-                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="drop-in" name="drop-in"> Drop-ins</label>
-                    </div>
-                </div>
-                <div class="inquiry-form__entry">
                     <label class="entry__label" for="comments">Comments: </label>
                     <textarea class="entry__input" id="comments" name="comments"></textarea>
                 </div>
-                <div>
-                    <input class="inquiry-form__submit" type="submit" value="Submit">
-                </div>
+                <input class="inquiry-form__submit" type="submit" onclick="deleteFormElement()" value="Send">
             </form>
-            <img src="icons/girl2.png" class="inquiry-img"/>
+            <div id="img-container" class="inquiry-form flex-container">
+                <p>We'll be in contact shortly! Thank you.</p>
+                <img src="icons/girl2.png" class="inquiry-img"/>
+            </div>
         </div>
     </main>
     <footer class="footer-container | flex-container bg-color-purple-1">
