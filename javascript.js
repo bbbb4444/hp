@@ -27,9 +27,8 @@ function changeToLoadingGif() {
     let submit = document.getElementById("inquiry-form__submit");
     let spinner = document.getElementById("spinner");
     let sendText = document.getElementById("submit__text");
-    submit.style.backgroundPosition = "0px -150px";
     sendText.parentNode.removeChild(sendText);
-
+    submit.style.backgroundImage = "none";
     submit.style.borderRadius = "100%";
     submit.style.height = "5.0em";
     submit.style.width = "5.0em";
