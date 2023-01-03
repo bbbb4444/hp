@@ -302,6 +302,8 @@ nav {
 }
 .inquiry-form {
     display: flex;
+    width: 100%;
+    max-width: 500px;
     flex-direction: column;
     border-style: double;
     border-width: 10px;
@@ -313,20 +315,23 @@ nav {
 }
 .inquiry-form__entry {
     display: flex;
-    width: auto;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+
 }
 .entry__label {
     white-space: nowrap;
     width: 80px;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     float: left;
     clear: left;
     align-items: center;
 }
 .checkbox-container {
     height: 3em;
-    width: 300px;
+    width: 100%;
 }
 .entry__checkbox-label {
 
@@ -344,11 +349,11 @@ nav {
 }
 
 .entry__input, textarea {
-    width: 300px;
     display: inline-block;
     float: left;
     text-align: left;
-    margin: 15px;
+    width: 100%;
+    margin: 15px 0;
     padding: 15px;
     background-color: #ece9ff;
 }
@@ -416,10 +421,16 @@ iframe {
     .header__menu-icon {
         display: none;
     }
-
-    /*.greeting p:not(.large-text), .greeting a {*/
-    /*    font-size: 30px;*/
-    /*}*/
+    .inquiry-form__entry {
+        flex-direction: row;
+        align-items: inherit;
+    }
+    .entry__label {
+        justify-content: end;
+    }
+    .entry__input, textarea {
+        margin: 15px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .greeting {
