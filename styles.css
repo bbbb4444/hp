@@ -338,7 +338,7 @@ nav {
 .entry__input, textarea, .inquiry-form__submit {
 
     border-width: 3px;
-    border-radius: 25px;
+    border-radius: 20px;
     border-color: #d2d2d2;
     border-style: none;
 }
@@ -356,15 +356,21 @@ nav {
     border-color: #e54b4b;
 }
 .inquiry-form__submit {
+    height: 4.4em;
+    width: 5.5em;
     cursor: pointer;
     background-image: url("images/paw.png");
+    background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    padding: 25px;
     font-size: 16px;
     background-color: #7760a6;
     color: white;
-    transition: background-position 0.4s ease, color 0.3s ease-out;
+    transition: background-position 0.4s ease-in-out,
+                color 0.3s ease-in-out,
+                border-radius 0.5s ease-in-out,
+                height 0.5s ease-in-out,
+                width 0.5s ease-in-out;
 
 }
 .inquiry-form__submit:hover {
@@ -372,6 +378,7 @@ nav {
     background-position: bottom;
 }
 .inquiry-form__submit:active {
+    color: transparent;
     transition: 0.4s;
     transform: scale(96%);
     background-color: #ac89ef;
@@ -428,3 +435,24 @@ iframe {
     }
 }
 
+
+.spinner {
+    margin: 0 auto;
+    display: none;
+    height: 40px;
+    width: 40px;
+    border: 0.5em solid #dbd1f6;
+    border-bottom-color: #bea6ea;
+    border-radius: 50%;
+    animation: 1s spinner linear infinite;
+    position: relative;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

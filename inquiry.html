@@ -36,37 +36,44 @@
         <div class="inquiry-container | flex-container">
             <div class="inquiry-container__text-container | bg-color-1 text-center">
                 <p>You can contact us by filling out the form, and we'll get back to you as soon as possible.<br>
-                Check out where we provide our <services></services> <a href="services.html" class="here-link"><b>here</b></a></p>
+                Check out where we provide our services <a href="services.html" class="here-link"><b>here</b></a></p>
             </div>
-            <form id="inquiry-form" class="inquiry-form">
+            <form
+                    METHOD="POST"
+                    action="https://script.google.com/macros/s/AKfycbxffwiDhbHCo4UfYkDcvGMBoU2txuqSPjfSgTjShP0NK8zwMfsOyHKEt2lBhboQBgfIPA/exec"
+                    id="inquiry-form" class="inquiry-form"
+            >
                 <div class="inquiry-form__entry">
                     <label class="entry__label">Services: </label>
                     <div class="checkbox-container | flex-container-row justify-space-evenly">
-                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="dog-walk" name="dog-walk"> Dog Walks</label>
-                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="drop-in" name="drop-in"> Drop-ins</label>
+                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="Dog-walk" name="Dog-walk"> Dog Walks</label>
+                        <label class="entry__checkbox-label"><input class="" type="checkbox" id="Drop-in" name="Drop-in"> Drop-ins</label>
                     </div>
                 </div>
                 <div class="inquiry-form__entry">
-                    <label class="entry__label" for="name">Name: </label>
-                    <input class="entry__input" type="text" id="name" name="name">
+                    <label class="entry__label" for="Name">Name: </label>
+                    <input class="entry__input" type="text" id="Name" name="Name">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label class="entry__label" for="address">Address: </label>
-                    <input class="entry__input" type="text" id="address" name="address">
+                    <label class="entry__label" for="Address">Address: </label>
+                    <input class="entry__input" type="text" id="Address" name="Address">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label class="entry__label" for="phone">Phone: </label>
-                    <input class="entry__input" type="tel" id="phone" name="phone">
+                    <label class="entry__label" for="Phone">Phone: </label>
+                    <input class="entry__input" type="tel" id="Phone" name="Phone">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label class="entry__label" for="email">Email: </label>
-                    <input class="entry__input" type="email" id="email" name="email">
+                    <label class="entry__label" for="Email">Email: </label>
+                    <input class="entry__input" type="email" id="Email" name="Email">
                 </div>
                 <div class="inquiry-form__entry">
-                    <label class="entry__label" for="comments">Comments: </label>
-                    <textarea class="entry__input" id="comments" name="comments"></textarea>
+                    <label class="entry__label" for="Comments">Comments: </label>
+                    <textarea class="entry__input" id="Comments" name="Comments"></textarea>
                 </div>
-                <input class="inquiry-form__submit" type="submit" onclick="deleteFormElement()" value="Send">
+                <button id="inquiry-form__submit" class="inquiry-form__submit" type="submit">
+                    <p id="submit__text">Send</p>
+                    <div class="spinner" id="spinner"></div>
+                </button>
             </form>
             <div id="img-container" class="inquiry-form flex-container">
                 <p>We'll be in contact shortly! Thank you.</p>
