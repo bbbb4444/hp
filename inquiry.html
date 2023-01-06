@@ -34,18 +34,21 @@
     </header>
     <main class="bg-color-purple-1">
         <div class="inquiry-container | flex-container">
-            <div class="inquiry-container__text-container | bg-color-1 text-center">
-                <p>You can contact us by filling out the form, and we'll get back to you as soon as possible.<br>
-                Check out where we provide our services <a href="services.html" class="here-link"><b>here</b></a></p>
+            <div class="inquiry-container__text-container-map | bg-color-purple-2 margin-x-auto">
+                See our service map <a href="services.html" class="here-link"><b>here</b></a>
             </div>
+            <div class="inquiry-container__text-container | bg-color-1 text-center margin-x-auto">
+                <p>Fill out our contact form, and we'll get back to you as soon as possible.</p>
+            </div>
+
             <form
                     METHOD="POST"
                     action="https://script.google.com/macros/s/AKfycbxffwiDhbHCo4UfYkDcvGMBoU2txuqSPjfSgTjShP0NK8zwMfsOyHKEt2lBhboQBgfIPA/exec"
-                    id="inquiry-form" class="inquiry-form"
+                    id="inquiry-form" class="inquiry-form | margin-x-auto"
             >
                 <div class="inquiry-form__entry">
                     <label class="entry__label">Services: </label>
-                    <div class="checkbox-container | flex-container-row justify-space-evenly">
+                    <div class="checkbox-container | flex-container-row justify-space-evenly align-center">
                         <label class="entry__checkbox-label"><input class="" type="checkbox" id="Dog-walk" name="Dog-walk"> Dog Walks</label>
                         <label class="entry__checkbox-label"><input class="" type="checkbox" id="Drop-in" name="Drop-in"> Drop-ins</label>
                     </div>
@@ -75,14 +78,14 @@
                     <div class="spinner" id="spinner"></div>
                 </button>
             </form>
-            <div id="img-container" class="inquiry-form flex-container">
-                <p>We'll be in contact shortly! Thank you.</p>
+            <div id="img-container" class="inquiry-form flex-container margin-x-auto">
+                <p>We'll be in contact with you shortly! Thank you.</p>
                 <img src="icons/girl2.png" class="inquiry-img"/>
             </div>
         </div>
     </main>
     <footer class="footer-container | flex-container bg-color-purple-1">
-        <div class="footer-container__footer | flex-container bg-color-purple-2">
+        <div class="footer-container__footer | flex-container justify-center bg-color-purple-2 margin-x-auto text-center">
             <p>Copyright Helping Paw</p>
             <a href="https://google.com"><p>Privacy Policy</p></a>
         </div>

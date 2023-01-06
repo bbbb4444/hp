@@ -79,8 +79,6 @@ body {
 .flex-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .flex-container-row {
     display: flex;
@@ -97,11 +95,12 @@ body {
 .text-shadow { text-shadow: 0.1em 0.1em 0.1em black; }
 .bg-color-purple-2 { background-color: #e9e1fa; }
 .bg-color-purple-1 { background-color: #F3EFFB; }
-.bg-color-blue { background-color: #4d465d; }
+.bg-color-blue { background-color: #ffffff; }
 .bg-color-1 { background-color: #ddcffc; }
 .br-1 { border-radius: 1.1em; }
 .large-text { font-size: 1.3em; }
 .font-size-medium { font-size: 20px; }
+.font-size-small { font-size: 16px; }
 .pos-absolute { position: absolute; }
 .pos-relative { position: relative; }
 
@@ -193,6 +192,7 @@ nav {
     font-family: "Varela Round", sans-serif;
     cursor: pointer;
     min-width: fit-content;
+    width: fit-content;
     text-decoration: none;
     margin: 0 4px;
     color: white;
@@ -265,8 +265,7 @@ nav {
 }
 
 .button[data-type="medium"] {
-    padding: 0.3em 3em;
-    color: #3d0e3a;
+    color: #6e2083;
     font-size: 24px;
     font-weight: bold;
     /*background-color: mediumpurple;*/
@@ -293,6 +292,13 @@ nav {
 .inquiry-container__text-container {
     padding: 20px;
     border-radius: 8px;
+}
+.inquiry-container__text-container-map {
+    text-align: end;
+    max-width: 500px;
+
+    padding: 6px 12px;
+    border-radius: 15px;
 }
 .here-link {
     transition: 0.1s;
