@@ -23,6 +23,7 @@ h2 {
 }
 
 body {
+    display: block;
 }
 .main-wrap {
     display: flex;
@@ -199,6 +200,9 @@ nav {
     text-align: center;
     border-radius: 0.8em;
 }
+.current-nav {
+    text-shadow: #3d0e3a 0 0 1px;
+}
 
 .pictures {
     gap: 15px;
@@ -260,7 +264,6 @@ nav {
     padding: 20px 6px;
 }
 .button[data-type="nav"]:hover {
-    transition: 0.5s;
     color: purple;
 }
 
@@ -282,7 +285,7 @@ nav {
 /* inquiry page */
 .inquiry-container {
     margin: 20px;
-    padding: 80px 0px 0px 0px;
+    padding: 80px 0 0 0;
     width: auto;
     justify-content: center;
 }
@@ -291,7 +294,10 @@ nav {
 }
 .inquiry-container__text-container {
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
+    width: 85%;
+    max-width: 450px;
+    margin-bottom: -20px;
 }
 .inquiry-container__text-container-map {
     text-align: end;
@@ -301,10 +307,11 @@ nav {
     border-radius: 15px;
 }
 .here-link {
+    color: #5d0cff;
     transition: 0.1s;
 }
 .here-link:hover {
-    color: #9359ff;
+    color: #8b4eff;
 }
 .inquiry-form {
     display: flex;
