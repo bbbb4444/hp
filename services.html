@@ -5,6 +5,10 @@
     <title>Helping Paw LLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
+
+    <!--js and css for mapbox-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 
 
@@ -17,12 +21,12 @@
             <div class="logo-img"></div>
             <nav aria-label="primary">
                 <!--            TODO: fix links-->
-                <a class="button" data-type="nav" href="index.html">HOME</a>
-                <a class="button" data-type="nav" href="services.html">SERVICES</a>
-                <a class="button" data-type="nav" href="https://google.com">POLICY</a>
-                <a class="button" data-type="nav" href="https://google.com">ABOUT</a>
+                <a class="button hover-underline-animation" data-type="nav" href="index.html">HOME</a>
+                <a class="button | current-nav hover-underline-animation" data-type="nav" href="services.html">SERVICES</a>
+                <a class="button hover-underline-animation" data-type="nav" href="https://google.com">POLICY</a>
+                <a class="button hover-underline-animation" data-type="nav" href="https://google.com">ABOUT</a>
                 <div class="v-line"></div>
-                <a class='button' data-type="nav" href="inquiry.html">INQUIRY</a>
+                <a class='button | hover-underline-animation' data-type="nav" href="inquiry.html">INQUIRY</a>
             </nav>
             <div class="header__menu-icon">
                 <div class="menu-line"></div>
@@ -33,13 +37,19 @@
     </header>
 
     <main class="bg-color-purple-1">
-        <iframe width='100%'
-                height='400px'
-                src="https://api.mapbox.com/styles/v1/brobert910/clcaxc2c9001314pglllnellk.html?title=false&access_token=pk.eyJ1IjoiYnJvYmVydDkxMCIsImEiOiJjbGNheXEzc2Q0ODdnM3htczFkbjV5amtwIn0.rLVCGLDCXdsOxvRiU8NnUA&zoomwheel=false#11.45/39.3502/-76.4338"
-                title="Streets"
-                style="border:none;margin-top: 70px;">
-        </iframe>
-
+        <!--
+        <div id='map' style='width: auto; height: 400px; margin-top: 70px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoiYnJvYmVydDkxMCIsImEiOiJjbGNheXV4a3IwdGFiM3FuMnNrdWFrNTZyIn0.2Y9WD7HZXKD2qlsOszolyg';
+            const map = new mapboxgl.Map({
+                container: 'map', // container ID
+                style: 'mapbox://styles/brobert910/clcaxc2c9001314pglllnellk', // style URL
+                center: [-76.43, 39.333],  // starting position [lng, lat]
+                zoom: 10.7, // starting zoom
+            });
+        </script>
+        -->
+        <img src="images/servicemap.png" class="main-image"/>
         <form class="inquiry-container">
                 <div class="inquiry-form__entry">
                     <label for="name">Name: </label>
@@ -63,8 +73,9 @@
             </form>
 
     </main>
+
     <footer class="footer-container | flex-container bg-color-purple-1">
-        <div class="footer-container__footer | flex-container bg-color-purple-2">
+        <div class="footer-container__footer | flex-container justify-center bg-color-purple-2 margin-x-auto text-center">
             <p>Copyright Helping Paw</p>
             <a href="https://google.com"><p>Privacy Policy</p></a>
         </div>
