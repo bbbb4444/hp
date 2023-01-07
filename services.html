@@ -14,7 +14,7 @@
 
 
 <body>
-<div class="main-wrap">
+<div class="main-wrap | margin-x-auto">
     <header>
         <div class="header bg-color-purple-2 flex-container-row align-center">
             <!--        TODO: replace with logo img-->
@@ -37,19 +37,9 @@
     </header>
 
     <main class="bg-color-purple-1">
-        <!--
-        <div id='map' style='width: auto; height: 400px; margin-top: 70px;'></div>
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiYnJvYmVydDkxMCIsImEiOiJjbGNheXV4a3IwdGFiM3FuMnNrdWFrNTZyIn0.2Y9WD7HZXKD2qlsOszolyg';
-            const map = new mapboxgl.Map({
-                container: 'map', // container ID
-                style: 'mapbox://styles/brobert910/clcaxc2c9001314pglllnellk', // style URL
-                center: [-76.43, 39.333],  // starting position [lng, lat]
-                zoom: 10.7, // starting zoom
-            });
-        </script>
-        -->
-        <img src="images/servicemap.png" class="main-image"/>
+        <a href="images/servicemap.png" data-lightbox="gallery">
+            <img src="images/servicemap.png" class="main-image"/>
+        </a>
         <form class="inquiry-container">
                 <div class="inquiry-form__entry">
                     <label for="name">Name: </label>
