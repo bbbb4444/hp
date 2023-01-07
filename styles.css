@@ -1,11 +1,8 @@
-.fancybox__content {
-    padding: 0 !important;
+.lity-iframe-container {
+    height: 450px !important;
 }
-.fancybox__content>.carousel__button.is-close {
-    top: 8px !important;
-    right: 8px !important;
-    background-color: #372852;
-    border-radius: 100%;
+.lity-container {
+    max-width: 1200px !important;
 }
 * {
     font-family: Helvetica, serif;
@@ -287,6 +284,30 @@ nav {
 .button[data-type="medium"]:hover,
 .button[data-type="medium"]:focus {
     /*background-color: rgba(147, 112, 219, 0.7);*/
+}
+.button[data-type="small"] {
+    font-family: inherit;
+    color: #6e2083;
+    font-size: 20px;
+    font-weight: bold;
+    /*background-color: mediumpurple;*/
+}
+
+
+
+/* Services page */
+.clickable-map {}
+.clickable-map__map {
+    position: relative;
+}
+.clickable-map__text {
+    position: relative;
+    width: fit-content;
+    margin-top: -40px;
+    background-color: rgba(255, 255, 255, 0.58);
+    border-radius: 15px;
+    padding: 5px 12px;
+    box-shadow: #3d0e3a 2px 2px 5px;
 }
 
 
