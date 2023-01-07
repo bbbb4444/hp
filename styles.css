@@ -8,7 +8,7 @@
     border-radius: 100%;
 }
 * {
-    font-family: "Varela Round", Helvetica, serif;
+    font-family: Helvetica, serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -23,9 +23,11 @@ h1, h2, a {
 }
 h1 {
     font-size: x-large;
+    font-family: "Varela Round", Helvetica, serif;
 }
 h2 {
     font-size: larger;
+    font-family: "Varela Round", Helvetica, serif;
 }
 
 body {
@@ -163,6 +165,9 @@ nav {
     max-height: 700px;
     min-height: 400px;
     font-size: 4vw;
+}
+.greeting__text-container * {
+    font-family: "Varela Round", Helvetica, serif;
 }
 .greeting__button-container {
     margin-top: 2em;
