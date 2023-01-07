@@ -5,8 +5,10 @@
     <title>Helping Paw LLC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="styles.css"/>
-    <link rel="stylesheet" href="lightbox.min.css"/>
-    <script src="lightbox-plus-jquery.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
 </head>
 
 
@@ -94,25 +96,31 @@
             <article class="photo-gallery | flex-container" aria-label="photo gallery">
                 <h2 class="">Our Clients!</h2>
                 <section class="pictures | flex-container-row flex-wrap justify-center">
-                    <a href="photos/pic1.jpg" data-lightbox="gallery" data-title="Tucker">
+                    <a data-src="photos/pic1.jpg" data-fancybox="gallery">
                         <img src="thumbnails/pic1.jpg" class="pictures__img br-1" alt="dog">
                     </a>
-                    <a href="photos/pic2.jpg" data-lightbox="gallery" data-title="Cooper">
+                    <a data-src="photos/pic2.jpg" data-fancybox="gallery">
                         <img src="thumbnails/pic2.jpg" class="pictures__img br-1" alt="dog">
                     </a>
-                    <a href="photos/pic3.jpg" data-lightbox="gallery" data-title="Rafeek">
+                    <a data-src="photos/pic3.jpg" data-fancybox="gallery">
                         <img src="thumbnails/pic3.jpg" class="pictures__img br-1" alt="cat">
                     </a>
-                    <a href="photos/pic5.jpg" data-lightbox="gallery" data-title="Hugo">
+                    <a data-src="photos/pic5.jpg" data-fancybox="gallery">
                         <img src="thumbnails/pic5.jpg" class="pictures__img br-1" alt="dog">
                     </a>
-                    <a href="photos/pic8.jpg" data-lightbox="gallery" data-title="Hudson">
+                    <a data-src="photos/pic8.jpg" data-fancybox="gallery">
                         <img src="thumbnails/pic8.jpg" class="pictures__img br-1" alt="dog">
                     </a>
-                    <a href="photos/pic9.jpg" data-lightbox="gallery" data-title="Oakley">
+                    <a data-src="photos/pic9.jpg" data-fancybox="gallery">
                         <img src="thumbnails/pic9.jpg" class="pictures__img br-1" alt="dog">
                     </a>
                 </section>
+                <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+                <script>
+                    Fancybox.bind('[data-fancybox="gallery"]', {
+                        infinite: false
+                    });
+                </script>
                 <div class="flex-container align-center"><a class="button | hover-underline-animation" data-type="medium">View more</a></div>
             </article>
 

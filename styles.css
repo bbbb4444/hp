@@ -1,6 +1,12 @@
-
-
-
+.fancybox__content {
+    padding: 0 !important;
+}
+.fancybox__content>.carousel__button.is-close {
+    top: 8px !important;
+    right: 8px !important;
+    background-color: #372852;
+    border-radius: 100%;
+}
 * {
     font-family: "Varela Round", Helvetica, serif;
     box-sizing: border-box;
@@ -23,7 +29,6 @@ h2 {
 }
 
 body {
-    display: block;
 }
 .main-wrap {
     display: flex;
@@ -404,9 +409,6 @@ nav {
 #img-container {
     font-size: 18px;
     display: none;
-}
-iframe {
-    margin-top: 80px;
 }
 
 

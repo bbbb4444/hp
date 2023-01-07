@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Helping Paw LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css"/>
+
+    <!--js and css for mapbox-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+
+
+
+<body>
+    <div id='map' style='width: 100%; height: 100vh;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYnJvYmVydDkxMCIsImEiOiJjbGNheXEzc2Q0ODdnM3htczFkbjV5amtwIn0.rLVCGLDCXdsOxvRiU8NnUA';
+        const map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/brobert910/clcaxc2c9001314pglllnellk', // style URL
+            center: [-76.43, 39.333],  // starting position [lng, lat]
+            zoom: 10.7, // starting zoom
+        });
+    </script>
+</body>
+
+</html>
