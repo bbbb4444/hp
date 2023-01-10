@@ -23,10 +23,10 @@
 
 
 
-<body>
+<body class="bg-color-blue">
 <div class="main-wrap | margin-x-auto bg-color-purple-1">
     <header>
-        <div class="header bg-color-purple-2 flex-container-row align-center">
+        <div class="header bg-color-purple-1 flex-container-row align-center">
             <!--        TODO: replace with logo img-->
             <div class="logo-img"></div>
             <nav aria-label="primary">
@@ -46,34 +46,47 @@
         </div>
     </header>
 
-    <main>
+    <main class="bg-color-purple-1 child-gaps">
+        <div class="spacer"></div>
+        <article class="padding-16">
+            <h1>Services</h1>
+            <!-- <p>We offer dog walking, pet sitting, dog park trips,
+                medication administration, and more. Below are our general service rates.
+                If you have a special request in mind, please feel free to contact
+                us through our inquiry form.</p> -->
+            <div class="services | flex-container-row align-center flex-wrap gap-24 margin-x-auto">
+                <section class="services__service-card | margin-x-auto justify-space-between">
+                    <div class="small-gaps">
+                        <div class="margin-x-auto width-fit font-size-medium">Dog Walking</div>
+                        <div class="margin-x-auto width-fit">15 minutes: $15</div>
+                        <div class="margin-x-auto width-fit">30 minutes: $25</div>
+                        <div class="margin-x-auto width-fit">60 minutes: $35</div>
+                    </div>
+                    <div><a class="button" data-type="small-medium">Learn More</a></div>
+                </section>
+                <section class="services__service-card | margin-x-auto justify-space-between">
+                    <div class="small-gaps">
+                        <div class="margin-x-auto width-fit font-size-medium">Drop-ins</div>
+                        <div class="margin-x-auto width-fit">15 minutes: $15</div>
+                        <div class="margin-x-auto width-fit">30 minutes: $25</div>
+                        <div class="margin-x-auto width-fit">60 minutes: $35</div>
+                    </div>
+                    <div><a class="button" data-type="small-medium">Learn More</a></div>
+                </section>
+                <section class="services__service-card | margin-x-auto justify-space-between">
+                    <div class="small-gaps">
+                        <div class="margin-x-auto width-fit font-size-medium">House Sitting</div>
+                        <div class="margin-x-auto width-fit text-center">1 midday drop-in + 10-12 hour overnight stay: $80/day</div>
+                    </div>
+                    <div><a class="button" data-type="small-medium">Learn More</a></div>
+                </section>
+                </div>
+            <div class="text-center">Add $5 per additional pet for any service.</div>
+        </article>
         <a class="clickable-map" href="map.html" data-lity>
             <img src="images/servicemap.png" class="clickable-map__map | main-image"/>
             <p class="clickable-map__text | margin-x-auto">Tap here for an interactive map</p>
         </a>
-
-        <form class="inquiry-container">
-                <div class="inquiry-form__entry">
-                    <label for="name">Name: </label>
-                    <input type="text" id="name" name="name">
-                </div>
-            <div class="inquiry-form__entry">
-                    <label for="phone">Phone Number: </label>
-                    <input type="text" id="phone" name="phone">
-                </div>
-            <div class="inquiry-form__entry">
-                    <label for="email">Email: </label>
-                    <input type="text" id="email" name="email">
-                </div>
-            <div class="inquiry-form__entry">
-                    <label for="comments">Comments: </label>
-                    <textarea id="comments" name="comments"></textarea>
-                </div>
-            <div class="inquiry-form__entry">
-                    <input class="submit" type="submit" value="Submit">
-                </div>
-            </form>
-
     </main>
 
     <footer class="footer-container | flex-container bg-color-purple-1">

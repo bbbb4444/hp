@@ -42,10 +42,18 @@ body {
 .child-gaps > * {
     margin-top: 2em;
 }
+.child-gaps-nf > * + * {
+    margin-top: 2em;
+}
+.child-gaps-nf > * > * + * {
+    margin-top: 1em;
+}
 .child-gaps > * > * + * {
     margin-top: 1em;
 }
-
+.small-gaps > * + * {
+    margin-top: 1em;
+}
 
 /***************************** Utility *****************************/
 .hover-underline-animation {
@@ -77,10 +85,17 @@ body {
 .width-auto {
     width: auto;
 }
+.width-fit {
+    width: fit-content;
+}
 .width-100 {
     width: 100%;
 }
-
+.spacer {
+    margin-top: 60px;
+    width: 1px;
+    height: 1px;
+}
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -91,16 +106,20 @@ body {
 }
 .flex-wrap { flex-wrap: wrap; }
 .justify-space-evenly { justify-content: space-evenly; }
+.justify-space-between { justify-content: space-between; }
 .justify-center { justify-content: center; }
 .align-end { align-items: end; }
 .align-center { align-items: center; }
+.gap-24 { gap: 24px; }
+.padding-16 { padding: 16px; }
 .text-center { text-align: center; }
+.text-align-vert { vertical-align: center;}
 .color-white { color: white; }
 .color-red { color: darkred; }
 .text-shadow { text-shadow: 0.1em 0.1em 0.1em black; }
-.bg-color-purple-2 { background-color: #e9e1fa; }
-.bg-color-purple-1 { background-color: #F3EFFB; }
-.bg-color-blue { background-color: #ffffff; }
+.bg-color-purple-2 { background-color: rgba(231, 231, 231, 0.9); }
+.bg-color-purple-1 { background-color: #ffffff; }
+.bg-color-blue { background-color: #f3effb; }
 .bg-color-1 { background-color: #ddcffc; }
 .darken { filter: brightness(70%); }
 .br-1 { border-radius: 1.1em; }
@@ -120,6 +139,7 @@ body {
     height: 80px;
     justify-content: space-between;
     padding-right: 10px;
+    box-shadow: rgba(68, 33, 114, 0.9) -1px 3px 5px;
 }
 nav {
     display: none;
@@ -186,13 +206,13 @@ nav {
     min-height: 100vh;
 }
 
-.services {
+.services-index {
     max-width: 600px;
 }
-.services__service {
+.services-index__service {
     gap: 6px;
 }
-.services__service-notice {
+.services-index__service-notice {
     text-align: center;
 }
 
@@ -284,6 +304,13 @@ nav {
 .button[data-type="medium"]:hover,
 .button[data-type="medium"]:focus {
     /*background-color: rgba(147, 112, 219, 0.7);*/
+}
+.button[data-type="small-medium"] {
+    color: #6e2083;
+    font-size: 20px;
+    font-weight: bold;
+    /*background-color: mediumpurple;*/
+    text-transform: uppercase;
 }
 .button[data-type="small"] {
     font-family: inherit;
@@ -437,9 +464,24 @@ nav {
 }
 
 
+/* Services page */
+.services {
+    max-width: 992px;
+}
 
-
-
+.services__service-card {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    border-style: none;
+    border-width: 10px;
+    border-radius: 25px;
+    border-color: #ecdfff;
+    padding: 20px;
+    background-color: #e9e1fa;
+}
 
 
 
